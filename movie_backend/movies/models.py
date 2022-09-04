@@ -4,37 +4,38 @@ from django_paranoid.models import ParanoidModel
 
 
 # Create your models here.
+# Movie model
 class Movies(ParanoidModel):
     movie_id = models.BigAutoField(auto_created=True, primary_key=True, serialize=False)
-    title =  models.CharField(max_length=128)
-    year =  models.CharField(max_length=128)
-    rated =  models.CharField(max_length=128)
-    released =  models.CharField(max_length=128)
-    runtime =  models.CharField(max_length=128)
-    genre =  models.TextField(blank=True, null=True)
-    director =  models.CharField(max_length=128)
-    writer =  models.CharField(max_length=128)
-    actors =  models.CharField(max_length=128)
-    plot =  models.TextField(blank=True, null=True)
-    language =  models.CharField(max_length=128)
-    country =  models.CharField(max_length=128)
-    awards =  models.CharField(max_length=128)
-    poster =  models.TextField(blank=True, null=True)
-    ratings =  models.TextField(blank=True, null=True)
-    metascore =  models.TextField(blank=True, null=True)
+    Title =  models.CharField(max_length=128)
+    Year =  models.CharField(max_length=128)
+    Rated =  models.CharField(max_length=128)
+    Released =  models.CharField(max_length=128)
+    Runtime =  models.CharField(max_length=128)
+    Genre =  models.TextField(blank=True, null=True)
+    Director =  models.CharField(max_length=128)
+    Writer =  models.CharField(max_length=128)
+    Actors =  models.CharField(max_length=128)
+    Plot =  models.TextField(blank=True, null=True)
+    Language =  models.CharField(max_length=128)
+    Country =  models.CharField(max_length=128)
+    Awards =  models.CharField(max_length=128)
+    Poster =  models.TextField(blank=True, null=True)
+    Ratings =  models.TextField(blank=True, null=True)
+    Metascore =  models.TextField(blank=True, null=True)
     imdbRating =  models.CharField(max_length=128)
     imdbVotes =  models.CharField(max_length=128)
     imdbID =  models.CharField(max_length=128)
-    type =  models.CharField(max_length=128)
-    dvd =  models.CharField(max_length=128)
-    boxOffice =  models.CharField(max_length=128)
-    production =  models.CharField(max_length=128)
-    website =  models.CharField(max_length=128)
-    response =  models.CharField(max_length=128)
+    Type =  models.CharField(max_length=128)
+    DVD =  models.CharField(max_length=128)
+    BoxOffice =  models.CharField(max_length=128)
+    Production =  models.CharField(max_length=128)
+    Website =  models.CharField(max_length=128)
+    Response =  models.CharField(max_length=128)
 
 
     def __str__(self):
-        return self.name
+        return self.Title
 
 
     class Meta:
